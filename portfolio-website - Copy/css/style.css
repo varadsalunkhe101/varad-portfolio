@@ -1,0 +1,174 @@
+/* ================= GENERAL ================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* ================= HERO SECTION ================= */
+
+#home {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+#home h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#home h3 {
+    color: #6c757d;
+}
+
+#home img {
+    border: 8px solid white;
+    transition: 0.4s;
+}
+
+#home img:hover {
+    transform: scale(1.03);
+}
+
+/* ================= SECTION TITLES ================= */
+
+section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+section h2::after {
+    content: "";
+    width: 60%;
+    height: 4px;
+    background: #0d6efd;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+#about img {
+    transition: 0.4s;
+}
+
+#about img:hover {
+    transform: scale(1.03);
+}
+
+/* ================= SKILLS SECTION ================= */
+
+#skills .card {
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#skills .card:hover {
+    transform: translateY(-10px);
+}
+
+.text-purple {
+    color: purple;
+}
+
+/* ================= PROJECTS SECTION ================= */
+
+#projects .card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+#projects img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+form .form-control {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+/* ================= FOOTER ================= */
+
+footer i {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #0d6efd;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 991px) {
+
+    #home {
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 45px;
+    }
+
+    #home img {
+        margin-top: 40px;
+    }
+
+    #about {
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
